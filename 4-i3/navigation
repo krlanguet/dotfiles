@@ -1,0 +1,26 @@
+#############################################################
+# file: i3-config.d/navigation
+#
+
+## Navigation
+# using [ down, up | left, right ] to utilize all four fingers
+# change focus
+#bindsym $sup+j focus down
+#bindsym $sup+k focus up
+#bindsym $sup+l focus left
+#bindsym $sup+semicolon focus right
+
+bindsym  $alt+j exec            "i3cd focus container down"
+bindsym  $alt+k exec            "i3cd focus container up"
+bindsym  $alt+l exec            "i3cd focus container left"
+bindsym  $alt+semicolon exec    "i3cd focus container right"
+
+# focus the parent container
+bindsym $alt+a focus parent
+
+# focus the child container
+bindsym $alt+c focus child
+
+bindsym $sup+l exec             "i3cd focus tab left"
+bindsym $sup+semicolon exec     "i3cd focus tab right"
+

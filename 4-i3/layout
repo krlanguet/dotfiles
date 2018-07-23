@@ -1,0 +1,30 @@
+#############################################################
+# file: i3-config.d/layout
+#
+
+# Use Mouse+$sup to drag floating windows to their wanted position
+floating_modifier $alt
+
+# move focused window
+bindsym $alt+Shift+j move down
+bindsym $alt+Shift+k move up
+bindsym $alt+Shift+l move left
+bindsym $alt+Shift+semicolon move right
+
+## Splitting
+# split in horizontal orientation
+bindsym $alt+h split h
+
+# split in vertical orientation
+bindsym $alt+v split v
+
+## Layouts
+# enter fullscreen mode for the focused container
+bindsym $alt+f fullscreen toggle
+
+# change container layout (tabbed, toggle split)
+bindsym $alt+e layout tabbed
+bindsym $alt+s layout toggle split
+
+# toggle tiling / floating
+bindsym $alt+space floating toggle

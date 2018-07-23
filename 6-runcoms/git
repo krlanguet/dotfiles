@@ -1,0 +1,11 @@
+[user]
+	email = krlanguet@gmail.com
+	name = Keith R Languet
+[credential]
+	helper = cache
+	helper = cache
+	helper = cache
+	helper = cache
+	helper = cache
+[core]
+	editor = nvim

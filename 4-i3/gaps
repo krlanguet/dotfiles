@@ -1,0 +1,15 @@
+#############################################################
+# file: i3-config.d/gaps
+#
+
+# Employ i3_gaps functionality !!
+gaps inner 9
+gaps outer 0
+
+# Correct behavior for single-window workspaces
+smart_gaps on # removes gaps
+hide_edge_borders smart # removes borders
+
+# Remove title bars and add small border for all windows
+for_window [class="^.*"] border pixel 4
+

@@ -1,0 +1,120 @@
+! FILE = .Xresources
+
+Xft.dpi:	96
+Xft.antialias:	true
+Xft.hinting:	true
+Xft.rgba:	rgb
+Xft.autohint:	false
+Xft.hintstyle:	hintslight
+Xft.lcdfilter:	lcddefault
+
+! -----------------------------------------------------------------------------
+! File: gruvbox-light.xresources
+! Description: Retro groove colorscheme generalized
+! Author: morhetz <morhetz@gmail.com>
+! Source: https://github.com/morhetz/gruvbox-generalized
+! Last Modified: 6 Sep 2014
+! -----------------------------------------------------------------------------
+
+! 
+! Terminal emulators usually let you define 8 colors in two modes:
+! 
+! Normal        Bright
+! --------      -------
+! 0 Black       8 Gray30
+! 1 Red3        9 Red
+! 2 Green3      10 Green
+! 3 Yellow3     11 Yellow
+! 4 Dark Blue*  12 Blue*
+! 5 Magenta3    13 Magenta   
+! 6 Cyan3       14 Cyan
+! 7 Gray90      15 White
+! 
+! * Blue colors are customizable
+! 
+
+
+! hard contrast: *background: #f9f5d7
+! beige
+!*background: #fbf1c7
+*background:  #a89984
+!*background: #282828
+! soft contrast: *background: #f2e5bc
+*foreground: #3c3836
+! Black + DarkGrey
+*color0:  #fdf4c1
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #9d0006
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #79740e
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #b57614
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #076678
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #8f3f71
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #427b58
+! LightGrey + White
+*color7:  #7c6f64
+*color15: #3c3836
+
+!! -----------------------------------------------------------------------------
+!! File: gruvbox-dark.xresources
+!! Description: Retro groove colorscheme generalized
+!! Author: morhetz <morhetz@gmail.com>
+!! Source: https://github.com/morhetz/gruvbox-generalized
+!! Last Modified: 6 Sep 2014
+!! -----------------------------------------------------------------------------
+!
+!! DarkGrey Background
+!*background: #282828
+!! Beige Foreground
+!*foreground: #ebdbb2
+!
+!! Black
+!*color0:  #282828
+!! DarkGrey
+!*color8:  #928374
+!
+!! Red
+!*color1:  #cc241d
+!! Darkred
+!*color9:  #fb4934
+!
+!! DarkGreen
+!*color2:  #98971a
+!! Green
+!*color10: #b8bb26
+!
+!! DarkYellow
+!*color3:  #d79921
+!! Yellow
+!*color11: #fabd2f
+!
+!! DarkBlue
+!*color4:  #458588
+!! Blue
+!*color12: #83a598
+!
+!! DarkMagenta
+!*color5:  #b16286
+!! Magenta
+!*color13: #d3869b
+!
+!! DarkCyan
+!*color6:  #689d6a
+!! Cyan
+!*color14: #8ec07c
+!
+!! LightGrey
+!*color7:  #a89984
+!! Beige
+!*color15: #ebdbb2

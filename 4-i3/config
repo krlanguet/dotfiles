@@ -1,0 +1,254 @@
+#############################################################
+# file: i3-config.d/variables
+#
+
+# Set main mod key to Windows key
+set $sup Mod4
+set $alt Mod1
+
+
+# set primary gruvbox colorscheme colors
+set_from_resource $bg i3wm.background #282828
+set_from_resource $red i3wm.color1 #cc241d
+set_from_resource $green_d i3wm.color2 #98971a
+set_from_resource $green i3wm.color10 #b8bb26
+set_from_resource $yellow i3wm.color11 #d79921
+set_from_resource $blue i3wm.color12 #458588
+set_from_resource $purple i3wm.color5 #b16286
+set_from_resource $aqua i3wm.color6 #689d68
+set_from_resource $gray i3wm.color7 #a89984
+set_from_resource $beige i3wm.color15 #ebdbb2
+
+# gruvbox bg0_h
+set $darkgray #1d2021
+
+#############################################################
+# file: i3-config.d/theme
+#
+
+### Styling
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango:DejaVu Sans Mono 9
+
+# class                 border|backgr|text|indicator|child_border
+client.focused          $blue		$blue 		$darkgray 	$blue	 	$blue
+client.focused_inactive $gray 	$gray 	$darkgray 	$darkgray 	$darkgray
+client.unfocused        $bg 	$darkgray 	$green 	$darkgray 	$darkgray
+client.urgent           $red 		$red 		$beige 		$red 		$red
+client.background       $bg
+#############################################################
+# file: i3-config.d/applications
+#
+
+### Baseline keybindings
+## Basics
+
+# start a terminal
+bindsym $alt+Return exec ~/.config/scripts/terminal.sh 
+
+# Program Launcher
+# Executes dmenu which is linked to rofi by rofi-dmenu package.
+# Passes options determined by i3-dmenu-desktop package to show only reasonable applications
+bindsym $sup+Return exec i3-dmenu-desktop --dmenu='dmenu -i -theme ~/.config/i3/rofi'
+#bindsym $sup+d exec rofi -show run
+
+
+# Browser
+bindsym $alt+apostrophe exec chromium
+
+## Tabs Outliner
+bindsym $alt+Tab exec "python ~/.config/scripts/toggle_side_panel.py tabs_outliner 10 450"
+
+bindsym $sup+b exec "redshift -l 42.0515750:87.6814130 -o"
+bindsym $sup+Shift+b exec "redshift -x"
+
+# File manager
+#bindsym $sup+apostrophe exec /home/keith/dotfiles/environment/i3-scripts/terminal.sh rover --name=rover_float
+#for_window [instance="rover_float"] floating enable, resize set 800 600, move position center
+
+bindsym $sup+Tab exec "python ~/.config/scripts/toggle_side_panel.py rover 10 450"
+#############################################################
+# file: i3-config.d/bar
+#
+
+# i3bar
+# displays: workspace bar, system information from i3status
+bar {
+	position top
+    
+	status_command i3blocks
+    
+    tray_output primary
+
+    #font pango:DejaVu Sans Mono 9
+	colors {
+        statusline $beige
+        background $bg 
+        separator $gray
+
+        # workspace mode    border  background  text
+        focused_workspace   $darkgray   $blue       $darkgray
+        inactive_workspace  $darkgray   $bg     $gray
+        urgent_workspace    $darkgray   $red    $darkgray
+    }
+
+	# preserves default behavior
+	binding_mode_indicator yes
+
+	# remove workspace numbers
+	strip_workspace_numbers yes
+}
+#############################################################
+# file: i3-config.d/gaps
+#
+
+# Employ i3_gaps functionality !!
+gaps inner 9
+gaps outer 0
+
+# Correct behavior for single-window workspaces
+smart_gaps on # removes gaps
+hide_edge_borders smart # removes borders
+
+# Remove title bars and add small border for all windows
+for_window [class="^.*"] border pixel 4
+
+#############################################################
+# file: i3-config.d/layout
+#
+
+# Use Mouse+$sup to drag floating windows to their wanted position
+floating_modifier $alt
+
+# move focused window
+bindsym $alt+Shift+j move down
+bindsym $alt+Shift+k move up
+bindsym $alt+Shift+l move left
+bindsym $alt+Shift+semicolon move right
+
+## Splitting
+# split in horizontal orientation
+bindsym $alt+h split h
+
+# split in vertical orientation
+bindsym $alt+v split v
+
+## Layouts
+# enter fullscreen mode for the focused container
+bindsym $alt+f fullscreen toggle
+
+# change container layout (tabbed, toggle split)
+bindsym $alt+e layout tabbed
+bindsym $alt+s layout toggle split
+
+# toggle tiling / floating
+bindsym $alt+space floating toggle
+#############################################################
+# file: i3-config.d/meta
+#
+
+## i3 System Interaction
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $alt+Shift+r exec "xrdb ~/.Xresources && ~/.config/scripts/i3_mkconfig.sh && i3-msg restart"
+
+# exit i3 (logs you out of your X session)
+bindsym $alt+Shift+e exec "i3-nagbar -t warning -m 'Exit i3 and end X session?' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# kill focused window
+bindsym $alt+Shift+q kill
+
+#############################################################
+# file: i3-config.d/navigation
+#
+
+## Navigation
+# using [ down, up | left, right ] to utilize all four fingers
+# change focus
+#bindsym $sup+j focus down
+#bindsym $sup+k focus up
+#bindsym $sup+l focus left
+#bindsym $sup+semicolon focus right
+
+bindsym  $alt+j exec            "i3cd focus container down"
+bindsym  $alt+k exec            "i3cd focus container up"
+bindsym  $alt+l exec            "i3cd focus container left"
+bindsym  $alt+semicolon exec    "i3cd focus container right"
+
+# focus the parent container
+bindsym $alt+a focus parent
+
+# focus the child container
+bindsym $alt+c focus child
+
+bindsym $sup+l exec             "i3cd focus tab left"
+bindsym $sup+semicolon exec     "i3cd focus tab right"
+
+#############################################################
+# file: i3-config.d/resize
+#
+
+# file: i3-config.d/2-resize
+## Resizing mode
+bindsym $alt+r mode "resize"
+
+mode "resize" {
+        bindsym g resize grow height 10 px or 10 ppt
+        bindsym s resize shrink height 10 px or 10 ppt
+        bindsym Shift+g resize grow width 10 px or 10 ppt
+        bindsym Shift+s resize shrink width 10 px or 10 ppt
+
+        # back to normal
+        bindsym Return mode "default"
+}
+#############################################################
+# file: i3-config.d/volume
+#
+
+# file: i3-config.d/3-volume
+## Volume Control
+# Sink variable
+set $sink 0
+
+# Raise Volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-mute $sink false; pactl set-sink-volume $sink +5%"
+
+# Lower Volume
+bindsym XF86AudioLowerVolume exec "pactl set-sink-mute $sink false ; pactl set-sink-volume $sink -5%"
+
+# Toggle Mute
+bindsym XF86AudioMute exec pactl set-sink-mute $sink toggle
+
+#############################################################
+# file: i3-config.d/workspaces
+#
+
+### Workspaces
+## Start Workspace
+bindsym $alt+1 workspace 1:Start
+bindsym $alt+Shift+1 move container to workspace 1:Start, workspace 1:Start
+
+## Research Workspace
+bindsym $alt+2 workspace 2:Research
+bindsym $alt+Shift+2 move container to workspace 2:Research, workspace 2:Research
+
+# Assign windows to workspace
+assign [Title="^Zotero"] 2:Research
+assign [Title="^calibre"] 2:Research
+assign [Title="^docear"] 2:Research
+assign [Title="*.mm"] 2:Research
+
+## Communications Workspace
+bindsym $alt+3 workspace 3:Comm
+bindsym $alt+Shift+3 move container to workspace 3:Comm, workspace 3:Comm
+
+# Assign windows to workspace
+assign [Title="^Messenger for Desktop"] 3:Comm
+
+## Entertainment Workspace
+bindsym $alt+4 workspace 4:Entertain
+bindsym $alt+Shift+4 move container to workspace 4:Entertain, workspace 4:Entertain
+
+# Assign windows to workspace
+#assign [Title="^Spotify"] 4:Entertain # Bug in Spotify makes above ineffective
+for_window [class="Spotify"] move to workspace 4:Entertain

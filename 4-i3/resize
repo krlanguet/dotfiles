@@ -1,0 +1,17 @@
+#############################################################
+# file: i3-config.d/resize
+#
+
+# file: i3-config.d/2-resize
+## Resizing mode
+bindsym $alt+r mode "resize"
+
+mode "resize" {
+        bindsym g resize grow height 10 px or 10 ppt
+        bindsym s resize shrink height 10 px or 10 ppt
+        bindsym Shift+g resize grow width 10 px or 10 ppt
+        bindsym Shift+s resize shrink width 10 px or 10 ppt
+
+        # back to normal
+        bindsym Return mode "default"
+}

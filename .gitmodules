@@ -1,0 +1,27 @@
+[submodule "6-runcoms/nvim/bundle/browserlink.vim"]
+	path = 6-runcoms/nvim/bundle/browserlink.vim
+	url = https://github.com/jaxbot/browserlink.vim
+[submodule "6-runcoms/nvim/bundle/deoplete.nvim"]
+	path = 6-runcoms/nvim/bundle/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim
+[submodule "6-runcoms/nvim/bundle/gruvbox"]
+	path = 6-runcoms/nvim/bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox
+[submodule "6-runcoms/nvim/bundle/syntastic"]
+	path = 6-runcoms/nvim/bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+[submodule "6-runcoms/nvim/bundle/vim-buftabline"]
+	path = 6-runcoms/nvim/bundle/vim-buftabline
+	url = https://github.com/ap/vim-buftabline
+[submodule "6-runcoms/nvim/bundle/vim-markdown-composer"]
+	path = 6-runcoms/nvim/bundle/vim-markdown-composer
+	url = https://github.com/euclio/vim-markdown-composer
+[submodule "6-runcoms/nvim/bundle/vimtex"]
+	path = 6-runcoms/nvim/bundle/vimtex
+	url = https://github.com/lervag/vimtex
+[submodule "6-runcoms/nvim/bundle/Vundle.vim"]
+	path = 6-runcoms/nvim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim
+[submodule "6-runcoms/nvim/bundle/nerdtree"]
+	path = 6-runcoms/nvim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree

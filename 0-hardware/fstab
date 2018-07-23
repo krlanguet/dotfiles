@@ -1,0 +1,15 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda7
+LABEL=Arch	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/sda1
+LABEL=ESP      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+
+# /dev/sda11 LABEL=Home
+UUID=a4f9bf3e-fc44-49b4-9170-ceb242d2b202	/home     	btrfs     	rw,relatime,ssd,space_cache,subvolid=5,subvol=/	0 0
+
+# mounting Shared Data in home folder
+LABEL=Shared\040Data		/home/keith/Shared\040Data	ntfs-3g	nofail,rw,user,dmask=027,fmask=137,uid=1000,gid=1000	0	2

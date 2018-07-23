@@ -1,0 +1,16 @@
+{
+    "name": "krlanguet_dotfiles",
+    "description": "My personal dotfiles, managed with rxrc/curator.",
+    "author": "Keith Languet",
+    "homepage": "https://github.com/krlanguet/dotfiles",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/krlanguet/dotfiles"
+    },
+    "scripts": {
+        "curator": "curator"
+    },
+    "dependencies": {
+        "@rxrc/curator": "^1.0.0"
+    }
+}

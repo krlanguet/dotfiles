@@ -1,0 +1,9 @@
+#
+# FILE = /etc/X11/xorg.conf.d/10-backlight.conf
+#
+
+Section "Device"
+    Identifier  "Card0"
+    Driver      "intel"
+    Option      "Bakclight" "intel_backlight"
+EndSection

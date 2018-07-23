@@ -1,0 +1,33 @@
+#############################################################
+# file: i3-config.d/workspaces
+#
+
+### Workspaces
+## Start Workspace
+bindsym $alt+1 workspace 1:Start
+bindsym $alt+Shift+1 move container to workspace 1:Start, workspace 1:Start
+
+## Research Workspace
+bindsym $alt+2 workspace 2:Research
+bindsym $alt+Shift+2 move container to workspace 2:Research, workspace 2:Research
+
+# Assign windows to workspace
+assign [Title="^Zotero"] 2:Research
+assign [Title="^calibre"] 2:Research
+assign [Title="^docear"] 2:Research
+assign [Title="*.mm"] 2:Research
+
+## Communications Workspace
+bindsym $alt+3 workspace 3:Comm
+bindsym $alt+Shift+3 move container to workspace 3:Comm, workspace 3:Comm
+
+# Assign windows to workspace
+assign [Title="^Messenger for Desktop"] 3:Comm
+
+## Entertainment Workspace
+bindsym $alt+4 workspace 4:Entertain
+bindsym $alt+Shift+4 move container to workspace 4:Entertain, workspace 4:Entertain
+
+# Assign windows to workspace
+#assign [Title="^Spotify"] 4:Entertain # Bug in Spotify makes above ineffective
+for_window [class="Spotify"] move to workspace 4:Entertain

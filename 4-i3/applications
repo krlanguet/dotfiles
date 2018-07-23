@@ -1,0 +1,31 @@
+#############################################################
+# file: i3-config.d/applications
+#
+
+### Baseline keybindings
+## Basics
+
+# start a terminal
+bindsym $alt+Return exec ~/.config/scripts/terminal.sh 
+
+# Program Launcher
+# Executes dmenu which is linked to rofi by rofi-dmenu package.
+# Passes options determined by i3-dmenu-desktop package to show only reasonable applications
+bindsym $sup+Return exec i3-dmenu-desktop --dmenu='dmenu -i -theme ~/.config/i3/rofi'
+#bindsym $sup+d exec rofi -show run
+
+
+# Browser
+bindsym $alt+apostrophe exec chromium
+
+## Tabs Outliner
+bindsym $alt+Tab exec "python ~/.config/scripts/toggle_side_panel.py tabs_outliner 10 450"
+
+bindsym $sup+b exec "redshift -l 42.0515750:87.6814130 -o"
+bindsym $sup+Shift+b exec "redshift -x"
+
+# File manager
+#bindsym $sup+apostrophe exec /home/keith/dotfiles/environment/i3-scripts/terminal.sh rover --name=rover_float
+#for_window [instance="rover_float"] floating enable, resize set 800 600, move position center
+
+bindsym $sup+Tab exec "python ~/.config/scripts/toggle_side_panel.py rover 10 450"

@@ -1,0 +1,15 @@
+#
+# FILE=/etc/X11/xorg.conf.d/20-touchpad.conf
+#
+
+Section "InputClass"
+	Identifier "Touchpad"
+	Driver "libinput"
+	MatchIsTouchpad 	"on"
+	Option "Tapping" 	"on"
+	Option "ClickMethod"	"clickfinger"
+	Option "NaturalScrolling"	"true"
+	Option "ScrollMethod"	"twofinger"
+	Option "TappingDrag"	"true"
+	Option "TappingDragLock"	"false"
+EndSection

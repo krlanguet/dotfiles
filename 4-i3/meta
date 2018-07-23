@@ -1,0 +1,14 @@
+#############################################################
+# file: i3-config.d/meta
+#
+
+## i3 System Interaction
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $alt+Shift+r exec "xrdb ~/.Xresources && ~/.config/scripts/i3_mkconfig.sh && i3-msg restart"
+
+# exit i3 (logs you out of your X session)
+bindsym $alt+Shift+e exec "i3-nagbar -t warning -m 'Exit i3 and end X session?' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# kill focused window
+bindsym $alt+Shift+q kill
+

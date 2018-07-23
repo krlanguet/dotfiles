@@ -1,0 +1,24 @@
+#############################################################
+# file: i3-config.d/variables
+#
+
+# Set main mod key to Windows key
+set $sup Mod4
+set $alt Mod1
+
+
+# set primary gruvbox colorscheme colors
+set_from_resource $bg i3wm.background #282828
+set_from_resource $red i3wm.color1 #cc241d
+set_from_resource $green_d i3wm.color2 #98971a
+set_from_resource $green i3wm.color10 #b8bb26
+set_from_resource $yellow i3wm.color11 #d79921
+set_from_resource $blue i3wm.color12 #458588
+set_from_resource $purple i3wm.color5 #b16286
+set_from_resource $aqua i3wm.color6 #689d68
+set_from_resource $gray i3wm.color7 #a89984
+set_from_resource $beige i3wm.color15 #ebdbb2
+
+# gruvbox bg0_h
+set $darkgray #1d2021
+

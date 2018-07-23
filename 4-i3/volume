@@ -1,0 +1,18 @@
+#############################################################
+# file: i3-config.d/volume
+#
+
+# file: i3-config.d/3-volume
+## Volume Control
+# Sink variable
+set $sink 0
+
+# Raise Volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-mute $sink false; pactl set-sink-volume $sink +5%"
+
+# Lower Volume
+bindsym XF86AudioLowerVolume exec "pactl set-sink-mute $sink false ; pactl set-sink-volume $sink -5%"
+
+# Toggle Mute
+bindsym XF86AudioMute exec pactl set-sink-mute $sink toggle
+

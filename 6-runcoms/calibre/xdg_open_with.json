@@ -1,0 +1,50 @@
+{
+  "choose-open-with-program-dialog-geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywACAAAAAACzAAAAGwAAAwwAAAIQAAAAtAAAABwAAAMLAAACDwAAAAAAAAAAA8A="
+  }, 
+  "entries": {
+    "pdf": [
+      {
+        "Comment": "A minimalistic document viewer", 
+        "MimeType": [
+          "", 
+          "application/pdf"
+        ], 
+        "NoDisplay": "true", 
+        "Name": "Zathura", 
+        "Exec": [
+          "zathura", 
+          "%U"
+        ], 
+        "desktop_file_path": "/usr/share/applications/zathura-pdf-mupdf.desktop", 
+        "Terminal": "false", 
+        "Version": "1.0", 
+        "Type": "Application", 
+        "Categories": "Office;Viewer;", 
+        "uuid": "02c58dec-a402-4119-b050-ada736b332be"
+      }
+    ], 
+    "djvu": [
+      {
+        "Comment": "A minimalistic document viewer", 
+        "MimeType": [
+          "", 
+          "image/vnd.djvu"
+        ], 
+        "Terminal": "false", 
+        "NoDisplay": "true", 
+        "Name": "Zathura", 
+        "Exec": [
+          "zathura", 
+          "%U"
+        ], 
+        "desktop_file_path": "/usr/share/applications/zathura-djvu.desktop", 
+        "Version": "1.0", 
+        "Type": "Application", 
+        "Categories": "Office;Viewer;", 
+        "uuid": "cdc8343e-85da-40ac-9d17-708c926484c9"
+      }
+    ]
+  }
+}

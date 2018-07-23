@@ -1,0 +1,22 @@
+{
+  "cfg_plugin_debug_log_checkbox": false, 
+  "cfg_libimobiledevice_debug_log_checkbox": false, 
+  "plugin_version": "1.6.0", 
+  "cfg_disable_caching_checkbox": false, 
+  "additional_readers": [
+    "path/to/your/reader_class.py"
+  ], 
+  "cfg_news_clippings_checkbox": false, 
+  "developer_mode": false, 
+  "HORIZONTAL_RULE": "<hr width='80%' />", 
+  "COMMENTS_DIVIDER": "&middot;  &middot;  &bull;  &middot;  &#x2726;  &middot;  &bull;  &middot; &middot;", 
+  "cfg_news_clippings_lineEdit": "My News Clippings", 
+  "cc_mappings": {
+    "Calibre Library": {
+      "annotations": {
+        "field": "#mm_annotations", 
+        "combobox": "Annotations"
+      }
+    }
+  }
+}

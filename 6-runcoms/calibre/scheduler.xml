@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<recipe_collection xmlns="http://calibre-ebook.com/recipe_collection">
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:business_insider"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:1843"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:list_apart"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:guardian"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:the_scotsman"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:tpm_uk"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:observer_gb"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:independent"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:portfolio"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:wsj"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="custom:1000"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:wsj_free"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:scientific_american"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:nytimes_sub"/>
+
+	<account_info username="krlanguet" password="GorlyafWyldoft9" id="builtin:instapaper"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:instapaper"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:ars_technica"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:popscience"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:atlantic"/>
+
+	<recipe_customization keep_issues="0" add_title_tag="yes" custom_tags="" id="builtin:wash_post"/>
+
+</recipe_collection>

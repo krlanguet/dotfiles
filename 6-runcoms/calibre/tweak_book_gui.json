@@ -1,0 +1,43 @@
+{
+  "reports-ui-state": {}, 
+  "saved_seaches_state": {
+    "wrap": true, 
+    "direction": "down", 
+    "where": "current"
+  }, 
+  "recent-books": [
+    "/home/keith2/EECS-330/Contextual Interviews and How to Handle Them (2018.01.17-04.36.44Z).epub", 
+    "/home/keith/Classes/CogSci-210/HW1-Answered.epub"
+  ], 
+  "main_window_geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywACAAAAAAHiAAAADgAAA70AAAIZAAAB4wAAAA8AAAO8AAACGAAAAAAAAAAAA8A="
+  }, 
+  "import-foreign-geometry": {
+    "__class__": "bytearray", 
+    "__value__": "AdnQywACAAAAAAEcAAAArgAAApIAAAEYAAABHQAAAK8AAAKRAAABFwAAAAAAAAAAA8A="
+  }, 
+  "find-widget-state": {
+    "direction": "down", 
+    "case_sensitive": false, 
+    "mode": "normal", 
+    "wrap": true, 
+    "where": "current", 
+    "dot_all": false
+  }, 
+  "main_window_state": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAABCAAABxPwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAADAAAAHEAAAAMQD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAADEA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAFQA////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAEkA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAATIA////AAAAAQAAAIQAAAHE/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAMAAAAcQAAAAqAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAAAxAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAASgD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAAaAP///wAAAQ4AAAHEAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABDv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
+  }, 
+  "text_search_widget_state": {
+    "where": "current", 
+    "mode": "normal", 
+    "dot_all": true, 
+    "case_sensitive": false
+  }, 
+  "search-panel-visible": false, 
+  "check-book-splitter-state": {
+    "__class__": "bytearray", 
+    "__value__": "AAAA/wAAAAEAAAACAAAAJAAAACQA/////wEAAAABAA=="
+  }
+}
