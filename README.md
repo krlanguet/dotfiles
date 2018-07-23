@@ -1,2 +1,4 @@
 # dotfiles
-Personal Arch Linux configuration, maintained with [rxrc/curator](https://github.com/rxrc/curator).
+[![github](https://img.shields.io/badge/github-rxrc/curator-blue.svg)](https://github.com/rxrc/curator)
+
+Personal Arch Linux configuration.
