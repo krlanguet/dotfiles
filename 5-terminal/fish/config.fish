@@ -15,15 +15,18 @@ set --local running_servers (kak -l)
 if [ $running_servers ]
     for server in $running_servers
         switch $server
-            case "default (dead)"
-                echo "Restarting dead Kakoune server 'default'"
-                rm /tmp/kakoune/keith/default
-                kak -d -s default
-            case "default"
-                echo "Kakoune server 'default' already running"
+        case "default (dead)"
+            echo "Restarting dead Kakoune server 'default'"
+            rm /tmp/kakoune/keith/default
+            command kak -d -s default
+        case "default"
+            echo "Kakoune server 'default' already running"
+        case "*"
+            echo "Starting Kakoune server 'default'"
+            command kak -d -s default
         end   
     end
 else
     echo "Starting Kakoune server 'default'"
-    kak -d -s default
+    command kak -d -s default
 end
