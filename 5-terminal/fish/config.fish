@@ -12,7 +12,7 @@ set fish_greeting
  
 # Start kakoune daemon for faster file loads and shared registers
 set --local running_servers (kak -l)
-if [ $running_servers ]
+if test $running_servers
     for server in $running_servers
         switch $server
         case "default (dead)"
