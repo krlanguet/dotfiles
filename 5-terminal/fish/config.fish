@@ -17,7 +17,7 @@ if test $running_servers
         switch $server
         case "default (dead)"
             echo "Restarting dead Kakoune server 'default'"
-            rm /tmp/kakoune/keith/default
+            rm /tmp/kakoune/$USER/default
             command kak -d -s default
         case "default"
             echo "Kakoune server 'default' already running"
