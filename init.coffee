@@ -12,11 +12,12 @@
 
 # Relies on terminal-tab package, configured to launch
 # C:\\Windows\\System32\\wsl.exe as shell path
-terminalStarted = false
 atom.commands.add 'atom-workspace', 'terminal:focus', ->
-  atom.workspace.open('terminal-tab://') if !terminalStarted
-  terminalStarted = true
   dock = atom.workspace.getBottomDock()
+
+  terminalStarted = "Terminal" in (item.getTitle() for item in dock.getPaneItems())
+  atom.workspace.open('terminal-tab://') if !terminalStarted
+
   if dock.isVisible()
     dock.hide()
   else
